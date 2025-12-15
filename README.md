@@ -1,195 +1,48 @@
-# WELCOME TO HELL IS GOING THROUGH AN ORGANIZATIONAL REWRITE. WE DO NOT PLAN ON SUPPORTING THIS KIT, BUT WOULD RATHER LIKE TO SHOW THE WORLD WHAT WE HAVE COOKED. WELCOME TO HELL ON TOP
-
 <div align="center">
-    <img src="/assets/images/logo.png" alt="Welcome To Hell Logo" />
-    <h1>Welcome To Hell</h1>
+    <img alt="Welcome To Hell Logo" src="./assets/banner.png"/>
+    <br/>
 </div>
 
-Welcome To Hell wins the award for Most Schizophrenic Codebase!
+<h1>
+	Welcome To Hell (Summer 2025 Archive)
+    <a href="https://www.roblox.com/communities/12787072/Team-Fireworks-Games#!/about">
+        <img alt="Made by Team Fireworks" height="32px" src="./assets/github/made-by-team-fireworks.png"/>
+    </a>
+</h1>
 
-Runner ups are Eternal Towers of Hell v6.
+This repository holds the source code for Welcome To Hell's Summer 2025 Engine.
+While development has moved beyond this codebase, we believe that there is
+value in sharing our lessons from this codebase.
 
-## Acknowledgements
+## Disclaimer
 
-Some KitObjects references Eternal Towers of Hell Kit v6, Obren's Towers of Hell
-v3, Eternal Towers of Hell v5, and Total Fire Towers v2.
+This repository contains source code only. The license applies strictly to the
+code and underlying algorithms included here.
 
-## Environment Setup
+All non-code materials, such as art assets, trademarks, audio, and music, 
+are intentionally excluded. They remain the property of Team Fireworks and are
+not part of this release. Please don’t reach out asking for missing assets;
+they are not available and will not be shared.
 
-Gurt: What you're doing is very smart but also very dangerous. (to your mental
-health)
+This repo exists as a behind-the-scenes look at how Welcome To Hell was built.
+It is not intended to be a ready-made foundation for your own project. If you’re
+looking for a step-by-step guide or advice on turning this into your own game,
+good luck.
 
-### Prerequisites
+No technical support is offered for anything in this repository. I hope you are
+two steps ahead. Any bugs you encounter are now either your problem, or your
+opportunity to prove you should be hired by Team Fireworks. Godspeed.
 
-* Lack of sanity
-* Solid experience with Luau, including it's type system, especially needed for
-    writing KitObjects: <https://luau.org/getting-started>
-* Knowledge of TypeScript and the roblox-ts compiler, especially needed for
-    writing the game's backend or UI: <https://roblox-ts.com/>
+## License
 
-### For MacOS
+[ZLib License.](./LICENSE.md)
 
-TODO
+## Gratitude
 
-### For Windows
+Welcome To Hell is thankful for:
 
-#### Terms
-
-| Term | Explanation |
-|------|-------------|
-| Start Powershell | https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.5 (You can use an existing Powershell window) |
-| Restart Powershell | Close Powershell and then Start Powershell |
-| Open Powershell | Start Powershell |
-| Open New Window Terminal | https://learn.microsoft.com/en-us/windows/terminal/install#open-a-new-tab |
-
-#### Setup
-
-[Getting Rokit](https://github.com/rojo-rbx/rokit):
-1. Start Powershell
-2. Run this command
-
-    ```
-    Invoke-RestMethod https://raw.githubusercontent.com/rojo-rbx/rokit/main/scripts/install.ps1 | Invoke-Expression
-    ```
-
-3. Open New Window Terminal OR Restart Powershell
-4. Run this command: `rokit -V` and confirm it says something like `rokit 1.0.0`. If you get an error, you fucked up
-
-[Getting Bun](https://bun.sh/)
-
-1. Open Powershell
-2. Run this command
-
-    ```sh
-    powershell -c "irm bun.sh/install.ps1 | iex"
-    ```
-
-3. Open New Window Terminal OR Restart Powershell
-4. Run this command: `bun -v` and confirm it says something like `1.2.2`. If you get an error, you fucked up
-
-[Then, install Git](https://www.youtube.com/watch?v=iYkLrXobBbA)
-
-[Then, install VSCode](https://code.visualstudio.com/)
-
-Get Luau LSP for VSCode: <https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.luau-lsp>
-
-Make a new folder for Welcome To Hell's Game.
-
-Open it in VSCode. Should be obvious.
-
-`Ctrl+Shift+P` and search/then select "Terminal: Create New Terminal"
-
-Run these commands in that terminal line by line in order:
-
-```sh
-git init
-
-git pull https://github.com/wthgame/game.git
-
-git remote add origin https://github.com/wthgame/game.git
-
-rokit install
-
-bun install
-```
-
-Restart your code editor so all the editor tools can take in what insanity you
-just did.
-
-`Ctrl+Shift+P` and search/then select "Terminal: Create New Terminal".
-
-Verify everything else by Rokit is installed:
-
-```sh
-rojo -V
-lune -V
-```
-
-Install Rojo plugin:
-
-```sh
-rojo plugin install
-```
-
-Restart your code editor so all the editor tools can take in what insanity you
-just did.
-
-### Developing
-
-When new versions are pushed, do this:
-
-```sh
-git pull origin main
-```
-
-You may often download other dependencies as you work, or need to reinstall it.
-
-You can run this again:
-
-```sh
-bun i
-```
-
-To sync the project, make a terminal in your editor and run this:
-
-```sh
-lune run sync
-```
-
-Use arrow keys to pick the target to sync to and press enter to select.
-
-Open the game in Studio. If you installed Rojo correctly, a new `Rojo` plugin
-should be there. Click it, and a new panel appears. Click "Connect".
-
-You may be prompted to accept the sync. Just accept it.
-
-If everything works, GG gamer you can now start developing
-
-You will repeat this lots of time for when you need to sync in the codebase to
-Roblox Studio.
-
-When you want to sync assets in `assets` and `audios` run
-`asphalt run --target=studio`. This just copies over the image/sound asset files
-to Studio without actually uploading them.
-
-You may want to use the following resources:
-
-* Roblox Open Source server: <https://discord.gg/VaDCnesCXj>
-* roblox-ts server: <https://discord.gg/cMACFmHS7G>
-* Rojo: <https://rojo.space/>
-
-## Structure
-
-### `kit`
-
-Contains the user code for the Kit which includes the standard library
-(utilities to make client objects) and KitObjects.
-
-* `kit/scripts/Core`: Core KitObjects such as `Button` that is included in the Kit and the main game
-* `kit/scripts/Internal`: Internal KitObjects such as `TowerPortal` only synced into the main game
-* `kit/std`: Standard library for all KitScripts to use
-
-Read through the KitObjects to know what you should cook up.
-
-Technical documentation is auto generated by a script, see the `kit/core/Modifiers/LimitActivations.luau` for an example
-
-### `src`
-
-Backend code written in TypeScript. Split into `core`, `game`, and `kit`.
-
-* `src/core` contains core code shared between both the game and the Kit
-* `src/game` contains game code only synced to the main game
-* `src/kit` contains standalone Kit code only synced to the Kit development place
-
-Each of these folders have three folders: `client`, `shared`, and `server`.
-
-These map to client code (`WTHClientX`), shared code both in ReplicatedStorage
-(`WTHSharedX`) and server code in ServerScriptService (`WTHServerX`)
-
-My advise is to just sync in the game and look at the explorer.
-
-Networking definitions are in `game.blink` and `kit.blink` and `core.blink`
-these will generate to `net.luau` client/server files in the `core`, `game`, and
-`kit` folders. Read <https://1axen.github.io/blink> for more info.
-
-If you have questions feel free to ask me znotfireman :))
+-    [Eternal Towers of Hell](https://www.roblox.com/games/8562822414/Eternal-Towers-of-Hell)
+     for enabling Team Fireworks to preview the V6 Kit and use it as an early
+     reference for Welcome To Hell[^1]
+-    Other tower games, like Thai's Crazy Towers and Obren's Towers of Hell,
+     whom their implementations helped steer Welcome To Hell's API design

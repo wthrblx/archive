@@ -1,11 +1,12 @@
 <img alt="Welcome To Hell Logo" src="./assets/github/banner.png"/>
 
-<h1>
-	Welcome To Hell (Summer 2025 Archive)
+<div align="center">
+	<h1>Welcome To Hell</h1>
+	<h3>Summer 2025 Archive</h3>
     <a href="https://www.roblox.com/communities/12787072/Team-Fireworks-Games#!/about">
         <img alt="Made by Team Fireworks" height="32px" src="./assets/github/made-by-team-fireworks.png"/>
     </a>
-</h1>
+</div>
 
 This repository holds the source code for Welcome To Hell's Summer 2025 Engine.
 While development has moved beyond this codebase, we believe that there is

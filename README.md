@@ -1,18 +1,24 @@
-<img alt="Welcome To Hell Logo" src="./assets/github/banner.png"/>
-
 <div align="center">
-	<h3>
-		Welcome To Hell<br/>
-		Summer 2025 Archive
-	</h3>
+	<img alt="Welcome To Hell Logo" src="./assets/github/banner.png"/>
     <a href="https://www.roblox.com/communities/12787072/Team-Fireworks-Games#!/about">
         <img alt="Made by Team Fireworks" height="32px" src="./assets/github/made-by-team-fireworks.png"/>
     </a>
 </div>
 
+## Welcome To Hell Summer 2025 Archive
+
 This repository holds the source code for Welcome To Hell's Summer 2025 Engine.
 While development has moved beyond this codebase, we believe that there is
 value in sharing our lessons from this codebase.
+
+### What is Welcome To Hell?
+
+Welcome To Hell is a punishing tower-obby game focused on fresh, experimental
+gameplay and true-to-its-roots inspirations, all woven together with a gripping
+narrative.
+
+Welcome To Hell is unreleased as of December 2025, and is aiming for a release
+window of summer 2026 to winter 2026.
 
 ## Disclaimer
 

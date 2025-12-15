@@ -1,8 +1,10 @@
 <img alt="Welcome To Hell Logo" src="./assets/github/banner.png"/>
 
 <div align="center">
-	<h1>Welcome To Hell</h1>
-	<h3>Summer 2025 Archive</h3>
+	<h3>
+		Welcome To Hell<br/>
+		Summer 2025 Archive
+	</h3>
     <a href="https://www.roblox.com/communities/12787072/Team-Fireworks-Games#!/about">
         <img alt="Made by Team Fireworks" height="32px" src="./assets/github/made-by-team-fireworks.png"/>
     </a>
@@ -41,6 +43,6 @@ Welcome To Hell is thankful for:
 
 -    [Eternal Towers of Hell](https://www.roblox.com/games/8562822414/Eternal-Towers-of-Hell)
      for enabling Team Fireworks to preview the V6 Kit and use it as an early
-     reference for Welcome To Hell[^1]
+     reference for Welcome To Hell
 -    Other tower games, like Thai's Crazy Towers and Obren's Towers of Hell,
      whom their implementations helped steer Welcome To Hell's API design

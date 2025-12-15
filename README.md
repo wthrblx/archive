@@ -1,7 +1,4 @@
-<div align="center">
-    <img alt="Welcome To Hell Logo" src="./assets/banner.png"/>
-    <br/>
-</div>
+<img alt="Welcome To Hell Logo" src="./assets/github/banner.png"/>
 
 <h1>
 	Welcome To Hell (Summer 2025 Archive)

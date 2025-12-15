@@ -12,6 +12,27 @@ This repository holds the source code for Welcome To Hell's Summer 2025 Engine.
 While development has moved beyond this codebase, we believe that there is
 value in sharing our lessons from this codebase.
 
+### Showcase
+
+Early footage:
+
+[![Absolute Cinema](https://img.youtube.com/vi/5WySYeGqVu0/default.jpg)](https://youtu.be/5WySYeGqVu0)
+
+EToH Fangame Awards Showreel:
+
+[![EToH Fangame Awards Showreel](https://img.youtube.com/vi/xiFuNNUGQxg/default.jpg)](https://youtu.be/xiFuNNUGQxg)
+
+(Welcome To Hell was later nominated for Most Anticipated Fangame and Best
+Aspiring Fangame!)
+
+Welcome To Hell Kit with this codebase:
+
+![Kit](./assets/github/kit.png)
+
+Chapter 1 of Welcome To Hell with this codebase:
+
+![Terrain](./assets/github/terrain.png)
+
 ### What is Welcome To Hell?
 
 Welcome To Hell is a punishing tower-obby game focused on fresh, experimental

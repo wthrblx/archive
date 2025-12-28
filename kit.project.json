@@ -25,6 +25,9 @@
                 "$path": "kit/scripts",
                 "$ignoreUnknownInstances": true
             },
+            "KitTags": {
+                "$path": "kit/tags"
+            },
             "KitStd": {
                 "$path": "kit/std"
             },

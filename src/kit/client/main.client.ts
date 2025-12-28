@@ -12,6 +12,7 @@ try {
 	Flamework.addPaths("src/kit/client/controllers");
 	Flamework.addPaths("src/core/client/controllers");
 	Flamework.addPaths("src/core/client/hook-managers");
+	Flamework.addPaths("src/core/shared/hook-managers");
 	Flamework.ignite();
 	flameworkIgnited();
 	logger.info("Client ignited!");

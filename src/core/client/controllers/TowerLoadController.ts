@@ -4,12 +4,12 @@ import { Trove } from "@rbxts/trove";
 import { LogBenchmark } from "core/shared/decorators";
 import { TowerInstance } from "core/shared/types";
 import { BackgroundMusicController } from "./BackgroundMusicController";
-import { KitObjectController } from "./KitObjectController";
+import { Kit, KitController } from "./KitController";
 
 @Controller()
 export class TowerLoadController {
 	constructor(
-		private KitObjectController: KitObjectController,
+		private kitController: KitController,
 		private backgroundMusicController: BackgroundMusicController,
 	) {}
 
@@ -19,7 +19,12 @@ export class TowerLoadController {
 		tower.Parent = Workspace;
 		trove.add(tower);
 		this.backgroundMusicController.consumeMusicZones(trove, tower.BackgroundMusicZones);
-		await this.KitObjectController.loadMechanicsFromParent(trove, tower.Mechanics);
+		this.kitController.initKit(
+			trove,
+			new Kit(tower.Mechanics, tower.Spawn, "tower").useModules(
+				this.kitController.defaultKitTags.getValueWithoutLoadingOrThrow(),
+			),
+		);
 		return tower;
 	}
 }
